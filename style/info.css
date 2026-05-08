@@ -1,0 +1,80 @@
+.info-section {
+  display: flex;
+  padding: 40px 50px 40px 100px;
+  height: 85vh;
+  width: 100%;
+}
+.info-container {
+  padding: 32px 32px;
+  margin-left: 48px;
+  display: inline-block;
+  width: 100%;
+}
+.info-container h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+.info-container #watch-btn {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.2s ease;
+}
+.info-container #watch-btn:hover {
+  background-color: rgb(60, 60, 60);
+}
+.info-container p {
+  margin: 24px 0px 24px 0px;
+  padding-right: 100px;
+  text-align: justify;
+  font-weight: 500px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+.info-container #release-date {
+  color: rgb(150, 150, 150);
+}
+.poster {
+  overflow: hidden;
+  height: auto;
+  min-height: 600px;
+  min-width: fit-content;
+  box-sizing: border-box;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 0px;
+}
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s ease;
+}
+.poster img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.tag-container {
+  display: flex;
+  gap: 12px;
+  width: 25%;
+}
+.tag-container .tag {
+  background-color: rgb(41, 41, 41);
+  border: 2px solid rgb(60, 60, 60);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+#character-name {
+  color: rgb(150, 150, 150);
+  font-size: 16px;
+}

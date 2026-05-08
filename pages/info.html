@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Information</title>
+    <link rel="stylesheet" href="../style/info.css" />
+    <link rel="stylesheet" href="../style/general.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body class="black-bg">
+    <nav class="navbar black-bg">
+      <a href="index.html" style="text-decoration: none">
+        <div class="logo">
+          <h1>Mind<span>X</span> Cinema</h1>
+        </div>
+      </a>
+      <div class="nav-icon">
+        <a href="search.html">
+          <i class="fa fa-solid fa-magnifying-glass" id="search-btn"></i
+        ></a>
+        <a href="login.html">
+          <i
+            class="fa fa-solid fa-arrow-right-from-bracket"
+            id="logout-btn"></i>
+        </a>
+      </div>
+    </nav>
+    <div class="info-section" id="info-section">
+      <div class="poster">
+        <img />
+      </div>
+      <div style="display: flex; align-items: center">
+        <div class="info-container" id="info-container"></div>
+      </div>
+    </div>
+    <section class="content">
+      <div class="movie-section">
+        <h2>Casts</h2>
+        <div class="movie-grid-5" id="casts"></div>
+      </div>
+      <div class="movie-section">
+        <h2>Related Movies</h2>
+        <div class="movie-grid-5" id="related-movies"></div>
+      </div>
+    </section>
+    <footer><p>Copyright © MindX School</p></footer>
+    <script src="../javascript/general.js"></script>
+    <script type="module" src="../javascript/info.js"></script>
+  </body>
+</html>

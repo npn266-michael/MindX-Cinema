@@ -1,7 +1,6 @@
 import { TMDB_API_KEY } from "./config.js";
 
 const options = { method: "GET", headers: { accept: "application/json" } };
-
 fetch(
   `https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1&api_key=${TMDB_API_KEY}`,
   options,

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./style/general.css" />
+    <link rel="stylesheet" href="./style/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body class="black-bg">
+    <nav class="navbar black-bg">
+      <a href="./index.html" style="text-decoration: none">
+        <div class="logo">
+          <h1>Mind<span>X</span> Cinema</h1>
+        </div>
+      </a>
+      <div class="nav-icon">
+        <a href="./search.html">
+          <i class="fa fa-solid fa-magnifying-glass" id="search-btn"></i
+        ></a>
+        <a href="./profile.html">
+          <i class="fa-regular fa-circle-user" id="profile-btn"></i
+        ></a>
+        <a href="./login.html">
+          <i
+            class="fa fa-solid fa-arrow-right-from-bracket"
+            id="logout-btn"></i>
+        </a>
+      </div>
+    </nav>
+    <section class="main center">
+      <div class="profile-container">
+        <div class="up center">
+          <div class="img-container">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/03/Twitter_default_profile_400x400.png"
+              alt="Profile Image"
+              class="pfp" />
+          </div>
+          <div class="center">
+            <div class="info">
+              <h2 id="username">Username</h2>
+              <p id="email">Email:</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <form id="profile-form">
+          <div class="down">
+            <label for="username-input">Username:</label>
+            <input type="text" id="username-input" name="username" />
+            <label for="email-input">Email:</label>
+            <input type="email" id="email-input" name="email" />
+            <label for="password-input">Password:</label>
+            <input type="password" id="password-input" name="password" />
+            <button type="submit" class="save-btn">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="./javascript/profile.js"></script>
+  </body>
+</html>

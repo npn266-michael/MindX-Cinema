@@ -1,4 +1,7 @@
 let form = document.getElementById("loginForm");
+if (localStorage.getItem("currentUser") !== null) {
+  localStorage.removeItem("currentUser");
+}
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -18,7 +21,9 @@ form.addEventListener("submit", function (event) {
     );
     if (user) {
       alert("Đăng nhập thành công");
-      location.href = "./index.html";
+
+      localStorage.setItem("currentUser", user.username);
+      location.href = `./index.html`;
     } else {
       alert("Tên đăng nhập hoặc mật khẩu không đúng");
     }

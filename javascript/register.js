@@ -21,9 +21,15 @@ form.addEventListener("submit", function (event) {
   } else if (!password.match(/[0-9]/)) {
     alert("Password phải có ít nhất 1 số");
     return;
-  } else if (!password.match(/[@$!%*?&]/)) {
+  } else if (!password.match(/[@$!%*?&#]/)) {
     alert("Password phải có ít nhất 1 ký tự đặc biệt");
     return;
+  } else if (localStorage.getItem("users") !== null) {
+    const users = JSON.parse(localStorage.getItem("users"));
+    if (users.some((u) => u.username === username)) {
+      alert("Username đã tồn tại");
+      return;
+    }
   } else {
     // alert('Đăng ký thành công');
     const newUser = { email, username, password };

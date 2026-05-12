@@ -50,3 +50,6 @@ function renderMovies(data, id) {
     moviesTag.innerHTML = html;
   });
 }
+if (localStorage.getItem("currentUser") === null) {
+  window.location.href = "./login.html";
+}

@@ -5,57 +5,107 @@
   font-family: Arial, sans-serif;
 }
 body {
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-.container {
-  display: flex;
-  width: 80%;
-  max-width: 1000px;
-  align-items: center;
+#logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
-.left-side,
-.right-side {
-  flex: 1;
-  margin-right: 5px;
-}
-h1 {
-  margin-bottom: 30px;
-}
-input {
-  width: 100%;
-  max-width: 400px;
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-}
-.login-link {
-  text-decoration: none;
-  color: #a52a2a;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-.btn-submit {
-  background-color: #a52a2a;
+#logo h1 {
   color: white;
-  padding: 12px 30px;
+}
+#logo span {
+  color: red;
+}
+.container {
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+    url("../img/cinema2.jpg") center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 82px 0px 82px 0px;
+}
+.form {
+  background-color: rgba(0, 0, 0, 0.576);
+  height: auto-fit;
+  width: 80%;
+  padding: 72px;
+  max-width: 500px;
+  flex: 1;
+  border-radius: 8px;
+}
+.form h1 {
+  color: white;
+  margin-bottom: 32px;
+  font-size: 50px;
+}
+.form .inputField {
   border: none;
-  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 16px;
+  width: 100%;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  transition: 0.2s ease;
+}
+.form .inputField::placeholder {
+  color: rgb(141, 141, 141);
+}
+.form .inputField:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px rgb(255, 255, 255);
+}
+.form #terms {
+  transform: scale(1.5);
+  cursor: inherit;
+}
+.form #termsBox {
+  margin-bottom: 20px;
   cursor: pointer;
+}
+.form #termsLabel {
+  color: white;
+  font-size: 18px;
+  cursor: inherit;
+}
+.form #submitBtn {
+  display: inline;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 16px;
   width: 100%;
-  max-width: 400px;
-  transition: background 0.3s;
+  font-weight: bold;
+  margin-bottom: 40px;
+  cursor: pointer;
+  transition: background 0.2s;
 }
-.btn-submit:hover {
-  background-color: #8b0000;
+.form #submitBtn:hover {
+  background-color: rgb(165, 0, 0);
 }
-.right-side img {
-  width: 100%;
+.form #login-link {
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
 }
-a {
+.form #login-link a {
   text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+.form #login-link a:hover {
+  color: red;
 }

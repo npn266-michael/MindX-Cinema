@@ -2,60 +2,145 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
 }
 body {
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
 .container {
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+    url("../img/cinema.jpg") center/cover;
   display: flex;
-  width: 80%;
-  max-width: 1000px;
+  justify-content: center;
   align-items: center;
-}
-.left-side,
-.right-side {
-  flex: 1;
-  margin-right: 5px;
+  height: 100vh;
+  width: 100%;
+  padding: 82px 0px 82px 0px;
 }
 h1 {
   margin-bottom: 30px;
 }
-input {
-  width: 100%;
-  max-width: 400px;
-  padding: 15px;
+#logo {
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+#logo h1 {
+  color: white;
+}
+#logo span {
+  color: red;
+}
+.form {
+  background-color: rgba(0, 0, 0, 0.576);
+  height: auto-fit;
+  width: 80%;
+  padding: 72px;
+  max-width: 500px;
+  flex: 1;
+  border-radius: 8px;
+}
+.form h1 {
+  color: white;
+  margin-bottom: 32px;
+  font-size: 50px;
+}
+.form #username,
+.form #password {
+  border: none;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 16px;
+  width: 100%;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  transition: 0.2s ease;
+}
+.form #username::placeholder,
+.form #password::placeholder {
+  color: rgb(141, 141, 141);
+}
+.form #username:focus,
+.form #password:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px rgb(255, 255, 255);
+}
+.form #extra {
+  display: grid;
+  margin-bottom: 40px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.form #forgotPass {
+  display: flex;
+  justify-content: right;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.form #forgotPass a {
+  font-weight: normal;
+  font-size: 18px;
+  color: rgb(141, 141, 141);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.form #forgotPass a:hover {
+  color: white;
+}
+.form #remember {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  transform: scale(1.5);
+  cursor: inherit;
+}
+.form #rememberBox {
+  cursor: pointer;
+}
+.form #rememberLabel {
+  color: white;
+  font-size: 18px;
+  cursor: inherit;
+}
+.form #submitBtn {
+  display: inline;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.form #submitBtn:hover {
+  background-color: rgb(165, 0, 0);
+}
+.form #register-link {
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+}
+.form #register-link a {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+.form #register-link a:hover {
+  color: red;
 }
 .register-link {
   text-decoration: none;
   color: #a52a2a;
   margin-bottom: 20px;
   cursor: pointer;
-}
-.btn-submit {
-  background-color: #a52a2a;
-  color: white;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  width: 100%;
-  max-width: 400px;
-  transition: background 0.3s;
-}
-.btn-submit:hover {
-  background-color: #8b0000;
-}
-.right-side img {
-  width: 100%;
-}
-a {
-  text-decoration: none;
 }

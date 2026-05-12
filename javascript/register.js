@@ -5,7 +5,7 @@ form.addEventListener("submit", function (event) {
   let username = document.getElementById("username").value.trim();
   let email = document.getElementById("email").value.trim();
   let password = document.getElementById("password").value.trim();
-
+  let passwordConfirm = document.getElementById("verifyPassword").value.trim();
   if (username.length < 6) {
     alert("Username phải có ít nhất 6 ký tự");
     return;
@@ -23,6 +23,9 @@ form.addEventListener("submit", function (event) {
     return;
   } else if (!password.match(/[@$!%*?&#]/)) {
     alert("Password phải có ít nhất 1 ký tự đặc biệt");
+    return;
+  } else if (password !== passwordConfirm) {
+    alert("Mật khẩu xác nhận không khớp");
     return;
   } else if (localStorage.getItem("users") !== null) {
     const users = JSON.parse(localStorage.getItem("users"));

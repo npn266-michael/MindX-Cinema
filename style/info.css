@@ -15,7 +15,7 @@
   margin-bottom: 20px;
 }
 .info-container #watch-btn {
-  background-color: rgb(41, 41, 41);
+  background-color: var(--grey-one);
   color: white;
   border: none;
   padding: 12px 24px;
@@ -26,7 +26,7 @@
   transition: 0.2s ease;
 }
 .info-container #watch-btn:hover {
-  background-color: rgb(60, 60, 60);
+  background-color: var(--grey-two);
 }
 .info-container p {
   margin: 24px 0px 24px 0px;
@@ -37,7 +37,7 @@
   line-height: 1.5;
 }
 .info-container #release-date {
-  color: rgb(150, 150, 150);
+  color: var(--grey-three);
 }
 .poster {
   overflow: hidden;
@@ -48,7 +48,7 @@
   object-fit: cover;
   border-radius: 14px;
   transition: 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow);
   padding: 0px;
 }
 .poster img {
@@ -59,7 +59,7 @@
 }
 .poster img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: var(--box-shadow);
 }
 .tag-container {
   display: flex;
@@ -67,14 +67,14 @@
   width: 25%;
 }
 .tag-container .tag {
-  background-color: rgb(41, 41, 41);
-  border: 2px solid rgb(60, 60, 60);
+  background-color: var(--grey-one);
+  border: 2px solid var(--grey-two);
   color: white;
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 18px;
 }
 #character-name {
-  color: rgb(150, 150, 150);
+  color: var(--grey-three);
   font-size: 16px;
 }

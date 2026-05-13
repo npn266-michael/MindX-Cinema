@@ -1,3 +1,19 @@
+:root {
+  --hero-gradient: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.1)
+  );
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  --red-btn: #e50914;
+  --red-btn-hover: #b20710;
+  --transparent-white: rgba(255, 255, 255, 0.3);
+  --transparent-white-hover: rgba(255, 255, 255, 0.5);
+  --grey-one: rgb(41, 41, 41);
+  --grey-two: rgb(60, 60, 60);
+  --grey-three: rgb(150, 150, 150);
+}
+
 .navbar {
   padding: 32px 16px;
   display: flex;

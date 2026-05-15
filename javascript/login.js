@@ -23,7 +23,7 @@ form.addEventListener("submit", function (event) {
       alert("Đăng nhập thành công");
 
       localStorage.setItem("currentUser", user.username);
-      location.href = `./index.html`;
+      location.href = `../pages/index.html`;
     } else {
       alert("Tên đăng nhập hoặc mật khẩu không đúng");
     }

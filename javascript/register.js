@@ -44,6 +44,6 @@ form.addEventListener("submit", function (event) {
       localStorage.setItem("users", JSON.stringify(users));
     }
     alert("Đăng ký thành công");
-    location.href = "./login.html";
+    location.href = "../pages/login.html";
   }
 });

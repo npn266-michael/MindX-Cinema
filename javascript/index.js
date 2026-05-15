@@ -36,7 +36,7 @@ function renderMovies(data, id) {
   let html = "";
   data.forEach((movie) => {
     html += `
-    <a href="./info.html?id=${movie.id}">
+    <a href="../pages/info.html?id=${movie.id}">
       <div class="movie-card">
         <div class="img-container img-container-4">
           <img
@@ -51,5 +51,5 @@ function renderMovies(data, id) {
   });
 }
 if (localStorage.getItem("currentUser") === null) {
-  window.location.href = "./login.html";
+  window.location.href = "../pages/login.html";
 }

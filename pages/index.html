@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>MindX Cinema</title>
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/general.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <a href="../pages/index.html">
+          <div class="logo">
+            <h1>Mind<span>X</span> Cinema</h1>
+          </div>
+        </a>
+        <div class="nav-icon">
+          <a href="../pages/search.html">
+            <i class="fa fa-solid fa-magnifying-glass" id="search-btn"></i
+          ></a>
+          <a href="../pages/profile.html">
+            <i class="fa-regular fa-circle-user" id="profile-btn"></i
+          ></a>
+          <a href="../pages/login.html">
+            <i
+              class="fa fa-solid fa-arrow-right-from-bracket"
+              id="logout-btn"></i>
+          </a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Interstellar</h1>
+          <p>
+            When Earth becomes uninhabitable in the future, a farmer and ex-NASA
+            pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a
+            team of researchers, to find a new planet for humans.
+          </p>
+          <div class="hero-button-container">
+            <button class="btn-watch">
+              <span class="fa-solid fa-play"></span> Watch now
+            </button>
+            <button class="btn-info">
+              <span class="fa-solid fa-circle-info"></span> View Info
+            </button>
+          </div>
+        </div>
+        <div class="hero-poster">
+          <img
+            src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10543523_p_v8_as.jpg" />
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <section class="movie-section">
+        <h2>Top Rated Movies</h2>
+        <div class="movie-grid-4" id="top_rated"></div>
+      </section>
+      <section class="movie-section">
+        <h2>Popular Movies</h2>
+        <div class="movie-grid-4" id="popular"></div>
+      </section>
+      <section class="movie-section">
+        <h2>Upcoming Movies</h2>
+        <div class="movie-grid-4" id="upcoming"></div>
+      </section>
+    </main>
+    <footer><p>Copyright © MindX School</p></footer>
+    <script type="module" src="../javascript/index.js"></script>
+    <script src="../javascript/general.js"></script>
+  </body>
+</html>
